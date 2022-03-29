@@ -1,0 +1,133 @@
+.left_container{
+    width: 55%;
+}
+.left_container .call_form_container{
+    width: 100%;
+}
+.pending_call_container .pending_call_card{
+    background-color: rgb(223, 223, 223);
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin: 2px;
+}
+.pending_call_container .pending_call_card p{
+    font-size: 12px;
+}
+
+.choose_group select{
+    width: 80px;
+}
+.choose_group p{
+    font-size: 12px;
+}
+.create_call_container {
+    margin-top: 21px;
+    background-color: rgb(228, 228, 228);
+    padding: 1em;
+}
+.create_call_container .head_text h4{
+    margin: 0px;
+}
+.create_call_container .input_card>div{
+    padding: 5px 0px;
+}
+.create_call_container .input_card p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.input_card .pre_visited{
+    padding-left: 20px;
+}
+.input_card input[type=submit]{
+    font-size: 15px;
+    font-weight: 600;
+    padding:4px 15px;
+    background-color: #F7DE05;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  -3px 3px 0px #bebebe;
+    transition: 0.1s;
+    transform: scale(1);
+}
+.input_card input[type=submit]:hover{
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(0.96);
+    transition: 0.1s;
+}
+
+/* partner feed */
+.sidebar{
+    width: 30%;
+}
+.partner_feed{
+    width: 100%;
+}
+.partner_feed .head_title h2{
+    font-size: 18px;
+}
+.feed_container{
+    width: 100%;
+    height: 430px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.feed_card{
+    max-width: 300px;
+    background-color: #dfdddd;
+    padding: 8px;
+    border: 3px dashed white;
+    border-radius: 20px;
+    /* margin: 5px; */
+    transition: 0.1s;
+}
+.feed_card:hover{
+    cursor: pointer;
+    border: 3px solid #cecece;
+    transform: scale(0.96);
+    transition: 0.1s;
+}
+.feed_card .title{
+    color:red;
+}
+.feed_card .date{
+    color: grey;
+}
+.feed_card .details{
+    padding:5px 0px 0px 0px;
+    color: grey;
+}
+
+.pre_visited_location_container{
+    width: 100%;
+    padding: 1em 0em;
+}
+
+.pre_visited_location_container .group_container{
+    padding: 1em 0em;
+}
+.group_container .group_card{
+    width: fit-content;    
+    padding: 5px 15px;
+    background-color:  rgb(220, 220, 220);
+    border-radius: 15px;
+    margin: 5px;
+}
+.group_card p{
+    font-size: 14px;
+    width: max-content;
+}
+
+@media screen and (max-width:480px){
+    .left_container{
+        width: 100%;
+        padding: 0px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,174 @@
+.left_container{
+    width: 50%;
+    padding-right: 0px;
+}
+.sidebar{
+    width: 40%;
+}
+.inner_box i{
+    font-size: 25px;
+}
+
+.group_info p{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.group_info img{
+    width:200px;
+    object-fit: fill;
+}
+.invitation_code p{
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+.invitation_code .copy_code i{
+    font-size: 14px;
+    padding: 5px;
+    margin-left:5px;
+    box-shadow: -3px 3px 0px #bebebe;
+    border-radius: 5px;
+    outline: 0.5px solid #bebebe;
+    transition: 0.1s;
+    transform: scale(1);
+}
+.invitation_code .copy_code i:hover{
+    box-shadow: none;
+    transform: scale(0.96);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.mob_member_btn{
+    padding: 2px 4px ;
+    border-radius: 5px;
+    background-color: #7bc5f8;
+    box-shadow:  -3px 3px 0px #bebebe;
+    transition: 0.1s;
+    transform: scale(1);
+    display: none;
+}
+.mob_member_btn:hover{
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(0.96);
+    transition: 0.1s;
+}
+
+
+.sidebar .member_container{
+    background-color: rgb(220, 220, 220);
+}
+.sidebar .member_container .status{
+    outline: 1px solid rgb(255, 255, 255);
+    padding: 0.5em 1em;
+}
+.sidebar .member_container .card_container {
+    padding: 0px 1em 1em 1em;
+    height: 250px;
+    overflow-y: scroll;
+}
+.member_container .online_status{
+    margin-top: 3px;
+}
+.member_container .bro_card{
+    width: 45%;
+    padding: 0.5rem;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+}
+.member_container .bro_card .profile_photo{
+    position:relative;
+    width: 54px;
+    height: 54px;
+}
+.member_container .bro_card .profile_photo img{
+    width: 50px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.profile_photo i{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    color:black;
+}
+.bro_card .bro_info{
+    padding: 5px 0px 0px 5px;
+}
+
+.engaged_group{
+    width: 100%;
+    padding: 1em 0em;
+}
+
+.engaged_group .group_container{
+    padding: 1em;
+    overflow-x: scroll;
+}
+.group_container .group_card{
+    width: fit-content;    
+    padding:15px;
+    background-color:  rgb(220, 220, 220);
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.group_card p{
+    font-size: 14px;
+    width: max-content;
+}
+
+.customize_group{
+    width: 100%;
+    padding: 2em 0em;
+}
+.caregory_container{
+    width: 100%;
+}
+.category_card_container{
+    width: 40%;
+    padding: 1em;
+}
+.category_card_container .custom_group_container{
+    padding: 1em 0em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.custom_group_container .group_container{
+    margin-bottom: 10px;
+}
+.custom_group_container .group_container .group_card{
+    margin-right: 10px;
+}
+.custom_group_container .group_container .group_card strong{
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:1010px){
+    .member_container .bro_card{
+        width: 100%;
+    } 
+}
+@media screen and (max-width:480px) {
+    .category_card_container{
+        width: 100%;
+    }
+    .mob_member_btn{
+        display: block;
+    }
+    .left_container{
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+        position: relative;
+        padding: 0px;
+    }
+    .sidebar .member_container{
+        display: none;
+    }
+    .member_container .bro_card{
+        width: 100%;
+    }
+}

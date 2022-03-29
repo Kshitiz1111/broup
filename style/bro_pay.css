@@ -1,0 +1,226 @@
+.left_container{
+    width: 50%;
+    padding-right: 0px;
+}
+.sidebar{
+    width: 40%;
+}
+
+.left_container .pay_container{
+    background-color: rgb(218, 218, 218);
+    position: relative;
+    padding: 0px 1.5em;
+    width: 100%;
+}
+.left_container .invoice_container form>div{
+    margin-top: 15px;
+}
+.left_container .split_money_box{
+    position: absolute;
+    top:5px;
+    right: 20px;
+    font-weight: 600;
+    color: red;
+}
+.pay_container input{
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+.pay_container .add_member_id{
+    display: flex;
+    justify-content: space-between;
+}
+.pay_container .add_member_id input[name="receiver_id"]{
+    margin: 5px;
+
+}
+.blur_background{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(10, 10, 10, 0.837);
+    backdrop-filter: blur(10px);
+    display: none;
+}
+.add_qr .container{    
+    padding: 1em;
+    position: absolute;
+    top: 0px;
+    left: -9px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+.add_qr .camera_view{
+    width:300px;
+    height:300px;
+    background-color: #7bff706b;
+}
+.add_qr .member_counter strong{
+    padding: 10px 5px ;
+    font-size: 14px;
+    float: right;
+}
+.add_qr .member_holder{
+    width: 300px;
+    height: 200px;
+    overflow-y:scroll;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.member_holder .member{
+    min-width: 60px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.member_holder #user_profile{
+    width: 50px;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+.member_holder #username{
+    text-align: center;
+    font-weight: 600;
+
+}
+.add_qr .button_holder{
+    padding: 1em 1em 0em 1em;
+    float: right;
+}
+.add_qr .button_holder button{
+    font-size: 20px;
+    font-weight: 600;
+    padding:4px 15px;
+    background-color: #F7DE05;
+    border: none;
+    border-radius: 5px;
+    box-shadow:  -3px 3px 0px #bebebe;
+    transition: 0.1s;
+    transform: scale(1);
+}
+.button_holder button:hover{
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(0.96);
+    transition: 0.1s;
+}
+.sidebar .trans_stmt{
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px 0px 0px;
+    overflow-y: scroll;
+    border-radius: 7px;
+}
+.sidebar .trans_stmt_card{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    transition: 0.1s;
+}
+.sidebar .trans_stmt_card:hover{
+    box-shadow:  -3px 3px 0px #bebebe;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.1s;
+}
+.sidebar .trans_stmt .received{
+    border: 1px solid #47c23c;
+    /* background-color: #67fa5a98; */
+    color:#47c23c;
+}
+.date{
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidebar .coin{
+    width: 100%;
+    position: relative;
+}
+.coin_mobile_view{
+    display: none;
+}
+.sidebar .coin .inner_box .child{
+    font-weight: 600;
+    padding: 0px;
+    text-align: end;
+}
+.coin .coin_status{
+    align-self: center;
+}
+.coin_status .inner_box_v2{
+    justify-content: right;
+}
+.child p {
+    margin:0px;
+}
+.sidebar .coin .receivable{
+    padding: 0px 5px;
+    color: green;
+    height: 40px;
+    
+}
+.sidebar .coin .payable{
+    padding: 0px 5px;
+    color: red;
+    height: 40px;
+}
+.coin .inner_box strong{
+    font-size: 12px;
+}
+
+.sidebar .coin .actual_coin{
+    width: 200px;
+    background: #d48e00;
+    color: white;
+    right: 0px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+.sidebar .coin .actual_coin p{
+    margin:0px 5px;
+}
+.sidebar .trans_stmt .paid{
+    border: 1px solid red;
+    /* background-color: red; */
+    color: red;
+}
+
+
+
+@media screen and (max-width:480px){
+    .left_container{
+        width: 100%;
+        padding: 0px;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .coin_desktop_view{
+        display: none;
+    }
+    .coin_mobile_view{
+        display: block;
+    }
+    .coin_mobile_view .coin object{
+        width: 90px;
+    }
+    .pay_container .add_member_id{
+        justify-content: space-evenly;
+    }
+    .pay_container .add_member_id input[name="receiver_id"]{
+        width: -webkit-fill-available;
+    }
+    .add_qr{
+        left: 0%;
+    }
+    .add_qr .container{
+        top: -100px;
+    }
+}

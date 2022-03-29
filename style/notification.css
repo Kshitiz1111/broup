@@ -1,0 +1,60 @@
+.notifications{
+    width: 100%;
+}
+
+.notifications_container{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.notification_card{
+    width: 250px;
+    padding: 1em;
+    border-radius: 20px;
+    margin: 5px;
+    /* background-color: #47c23c5b; */
+    border-left: 10px solid #47c23c;
+    background-color: #e7f2e6;
+}
+.notification_card:hover{
+    background-color: #d9f2d6;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+.notification_card .date{
+    color: grey;
+}
+.notification_card .details{
+    padding:5px 0px 0px 0px;
+}
+/* single notification page */
+.notification_container{
+    width: 100%;
+}
+.notification{
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    padding: 50px;
+    background-color: #e7f2e6;;
+    border-radius: 20px;
+}
+.notification .details{
+    padding-top: 20px;
+}
+.notification .bro_call{
+    float: right;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #F7DE05;
+    box-shadow:  -3px 3px 0px #bebebe;
+    transition: 0.1s;
+
+}
+.notification .bro_call:hover{
+    box-shadow: none;
+    cursor: pointer;
+    transform: scale(0.96);
+    transition: 0.1s;
+}

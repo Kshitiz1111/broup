@@ -1,0 +1,107 @@
+.register{
+    width:430px;
+    margin:2em auto;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    /* box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff; */
+  }
+
+  .register h2{
+    margin:0px 0px 23px 0px;
+    color:rgb(47, 186, 35);
+    font-weight: 600;
+    text-align: center;
+  }
+  .register .field {
+    width: 400px;
+    margin:0.8em auto;
+  }
+  .password .inner_field{
+    width: 100%;
+    position: relative;
+  }
+  .password .inner_field span{
+    position: absolute;
+    top: 12%;
+    right: 1.5%;
+    padding: 0.73em;
+    border-radius: 0px 22.5px 22.5px 0px;
+    background-color: rgb(47, 186, 35);
+    color: white;
+    letter-spacing: 1px;
+  }
+  .password .inner_field span:hover{
+    cursor: pointer;
+  }
+  
+  .gender{
+    display: flex;
+    justify-content: space-evenly;
+    color:rgb(118, 118, 118);
+  }
+  .gender>div{
+    display: flex;
+    justify-content: start;
+  }
+  .gender>div>input[type='radio']{
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .gender>div>input:checked{
+    box-shadow: none;
+  }
+  .gender>div>span{
+    font-weight: 600;
+    color: rgb(47, 186, 35);
+    letter-spacing: 1px;
+  }
+  input[type='submit']{
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 50%;
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 900;
+    box-shadow:  3px 3px 3px rgb(36, 95, 31),
+            -3px -3px 3px rgb(255, 255, 255);
+    background: rgb(47, 186, 35);
+  }
+  input[type='submit']:focus{
+    width: 50%;
+    box-shadow:  none;
+      box-shadow:  inset 3px 3px 3px rgb(36, 95, 31);
+    background: rgb(47, 186, 35);
+  }
+  input{
+    width: -webkit-fill-available;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 22.5px;
+    border: none;
+    outline: none;
+    color:rgb(47, 186, 35);
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow:  3px 3px 3px #cbced1,
+             -3px -3px 3px #ffffff;
+  }
+  input:focus{
+    outline: none;
+    box-shadow: inset 3px 3px 3px #cbced1,
+              inset -3px -3px 3px #ffffff;
+  }
+
+  @media screen and (max-width:400px) {
+    .register{
+      width:200px;
+    }
+    .register .field {
+      width: 200px;
+    }
+  }
