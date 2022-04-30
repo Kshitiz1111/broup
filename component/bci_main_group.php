@@ -6,8 +6,8 @@
                 <div class="bio">
                     <p>yo group high level gafadi ko lagi mattra ho kripaya dhayanma raknnu hoss</p>
                 </div>
-                <div class="qr_code">
-                   <img src="../assets/component_img/qr.jpg" alt="">
+                <div id="qr_code">
+                 
                 </div>
                 <div class="invitation_code inner_box">
                     <script>
@@ -20,3 +20,21 @@
                 </div>
             </div>
           <script src="../js/copy_text.js"></script>
+          <script src="../js/qrcode.js"></script>
+            <script type="text/javascript">
+                let code = document.querySelector('#invite_code');
+                let code_text = code.textContent;
+
+                let qrcode = new QRCode(document.querySelector('#qr_code'), {
+                text: code_text,
+                width: 200,
+                height: 200,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+
+            window.onload() = ()=>{
+                qrcode.makeCode(code_text);
+            };
+            </script>

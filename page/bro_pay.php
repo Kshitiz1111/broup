@@ -11,8 +11,10 @@
     
     <title>Document</title>
 </head>
-<body>
+<body>  
+    <div>
     <?php include '../component/nav.php';?>
+    </div>
     <div class="blur_background"></div>
     <div class="main_container">
     <div class="coin_mobile_view sidebar">

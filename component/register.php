@@ -11,7 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-<?php include 'nav.php';?>
+    <div>
+    <?php include 'nav.php';?>
+    </div>
 <div class="register">
     <h2>Register</h2>
     <form action="../php/register.php" method="post">

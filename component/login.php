@@ -10,7 +10,9 @@
     <title>Document</title>
 </head>
 <body>
-<?php include 'nav.php';?>
+    <div>
+    <?php include 'nav.php';?>
+    </div>
 <div class="register">
     <h2>Login</h2>
         <form action="../php/login.php" method="post">

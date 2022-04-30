@@ -129,5 +129,8 @@
     .sidebar{
         width: 100%;
     }
+    .feed_container{
+        margin-bottom: 0px;
+    }
 
 }

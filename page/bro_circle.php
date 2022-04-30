@@ -12,7 +12,9 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
     <?php include '../component/nav.php';?>
+    </div>
     
     <div class="main_container">
         <div class="left_container">
@@ -38,10 +40,10 @@
 
         </div>
 
-        <div class="customize_group">
-        <?php include"../component/bci_group_category.php";?>
+        <!-- <div class="customize_group">
+        <?php //include"../component/bci_group_category.php";?>
 
-        </div>
+        </div> -->
     </div>
 </body>
 <script src="../js/functions.js" defer></script>

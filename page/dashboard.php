@@ -11,7 +11,10 @@
     <title>dashboard</title>
 </head>
 <body>
+    <div>
     <?php include '../component/nav.php';?>
+    </div>
+
     <div class="main_container">
         <div class="left_container">
            

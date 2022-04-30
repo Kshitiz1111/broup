@@ -7,7 +7,7 @@
 
     $conn = new mysqli($SERVERNAME,$USERNAME,$PASSWORD,$DBNAME);
     if($conn){
-        echo "successfuly connected to db";
+        echo "<script>console.log('successfuly connected to db')</script>";
     }else {
-        echo "could not connect to db";
+        echo "<script>console.log('could not connect to db')</script>";
     }

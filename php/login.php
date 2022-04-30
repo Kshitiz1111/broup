@@ -6,7 +6,7 @@ if(isset($_POST['login'])){
     $userName = $_POST['userName'];
     $password = $_POST['password'];
     
-    $stmt = $conn->prepare("SELECT id, userName, password FROM users WHERE userName = ? ");
+    $stmt = $conn->prepare("SELECT userId, userName, password FROM users WHERE userName = ? ");
     $stmt->bind_param('s',$userName);
     $stmt->execute();
     $stmt->store_result();
@@ -20,7 +20,7 @@ if(isset($_POST['login'])){
             echo "password matched";
             session_start();
             $_SESSION["userName"] = $uName;
-            $_SESSION["id"] = $uId;
+            $_SESSION["userId"] = $uId;
             header("location: ../page/dashboard.php");
 
         }else{

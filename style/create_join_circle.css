@@ -54,7 +54,7 @@
     display: none;
 }
 .create_join #join_circle{
-    display: block;
+    display: none;
 }
 .box span{
     font-size: 15px;
@@ -80,7 +80,7 @@ form textarea{
     border-radius: 20px;
     border: none;
 }
-form input[type="button"]{
+form input[type="submit"]{
     background-color: #7bc5f8;
     box-shadow:  -4px 4px 0px #9b9b9b;
     transition: 0.1s;
@@ -88,7 +88,7 @@ form input[type="button"]{
     font-weight: 600;
     margin-top: 1em;
 }
-form input[type="button"]:hover{
+form input[type="submit"]:hover{
     cursor: pointer;
     transform: scale(0.96);
     box-shadow: none;
@@ -119,6 +119,67 @@ form input[type="button"]:hover{
     transition: 0.1s;
 }
 
+.existing_circle_container{
+    border-top: 1px solid white;
+    margin-top: 55px;
+}
+.existing_circle_container span{
+    float: left!important;
+    padding: 5px;
+}
+.existing_circle_card_container{
+    margin-top: 28px;
+    height: auto;
+    overflow-x:scroll;
+    scroll-behavior: smooth;
+}
+.existing_circle_card{
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px 5px;
+}
+.existing_circle_card .content{
+    padding: 10px;
+}
+.existing_circle_card .circle_members{
+    font-size: 14px;
+}
+.existing_circle_card .mutual_member{
+    padding: 5px;
+}
+.existing_circle_card .mutual_member img{
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    outline: 1px solid black;
+}
+.existing_circle_card .mutual_member img:not(:first-child){
+    margin-left: -13px;
+    z-index: 1;
+
+}
+.mutual_member span{
+    margin-top: -8px;
+}
+.existing_circle_card .request_btn{
+    border-radius:10px;
+    background-color: #000;
+    margin: 0px 10px 10px 10px;
+
+}
+.existing_circle_card button{
+    width: -webkit-fill-available;
+    font-size: 18px;
+    padding: 5px;
+    color:white;
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: auto;
+}
+.existing_circle_card button:hover{
+    cursor: pointer;
+}
 @media screen and (max-width:450px) {
     .main_container .welcome {
         width: -webkit-fill-available;
@@ -126,5 +187,8 @@ form input[type="button"]:hover{
     .create_join .box{
         width: 100%;
         left: -6px;
+    }
+    .join_circle_box form span{
+        float: left;
     }
 }

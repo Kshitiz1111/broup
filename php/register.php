@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     
     $stmt = $conn->prepare("INSERT INTO users(userName, firstName, middelName, lastName, country, city, localAddress, mobileNumber, password, gender) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ");
 
-    $stmt->bind_param("sssssssiss",$userName, $firstName, $middelName, $lastName, $country, $city, $localAddress, $mobileNumber, $password, $gender);
+    $stmt->bind_param("ssssssssss",$userName, $firstName, $middelName, $lastName, $country, $city, $localAddress, $mobileNumber, $password, $gender);
     header("location: ../component/login.php");
     $stmt->execute();
     $stmt->close();
